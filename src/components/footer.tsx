@@ -22,7 +22,9 @@ export default function Footer() {
         <div className="grid gap-12  md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-3">
             <Link href="/">
-              <h3 className="sr-only text-foreground">Doug's Tractor Works</h3>
+              <h3 className="sr-only text-foreground">
+                Doug&apos;s Tractor Works
+              </h3>
               <Image
                 src={siteConfig.logo}
                 alt="Logo"
