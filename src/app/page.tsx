@@ -13,8 +13,8 @@ import Tractor from "@/components/tractor"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      <div className="relative flex h-screen w-full flex-col items-center justify-center gap-4 px-4 text-center">
+    <main className="relative flex min-h-screen flex-col items-center justify-center">
+      <div className="relative flex min-h-screen w-full flex-col items-center justify-center gap-4 px-4 text-center lg:h-screen">
         <h1 className="text-start text-5xl font-bold sm:text-5xl md:text-6xl lg:text-center lg:text-7xl">
           {siteConfig.name}
         </h1>
@@ -32,6 +32,7 @@ export default function Home() {
           >
             CALL FOR QUOTE
           </Link>
+
           <Link
             href={`tel:${siteConfig.links.tel}`}
             target="_blank"
@@ -42,15 +43,15 @@ export default function Home() {
           >
             View our Best Work
           </Link>
+          <Tractor />
           <Link
             href={"mailto:dpistone10@yahoo.com"}
             className="absolute bottom-4 right-4 flex items-center gap-2"
           >
-            <Icons.email className="h-7 w-7" />
-            <span className="font-medium">dpistone10@yahoo.com</span>
+            <Icons.email className="h-6 w-6" />
+            <span className="text-sm font-medium">dpistone10@yahoo.com</span>
           </Link>
         </div>
-        <Tractor />
       </div>
       <div className="flex min-h-[50vh] w-full  items-center justify-between gap-3 bg-secondary px-4 py-10 lg:px-40">
         <section className="flex flex-col items-start">
