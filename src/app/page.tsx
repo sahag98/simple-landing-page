@@ -27,7 +27,7 @@ export default function Home() {
             target="_blank"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "text-base font-bold"
+              "cursor-pointer text-base font-bold"
             )}
           >
             CALL FOR QUOTE
@@ -38,19 +38,19 @@ export default function Home() {
             target="_blank"
             className={cn(
               buttonVariants({ size: "lg", variant: "secondary" }),
-              "text-sm  font-bold lg:text-lg"
+              "cursor-pointer text-sm  font-bold lg:text-lg"
             )}
           >
             View our Best Work
           </Link>
           <Tractor />
-          <Link
+          {/* <Link
             href={"mailto:dpistone10@yahoo.com"}
             className="absolute bottom-4 right-4 flex items-center gap-2"
           >
             <Icons.email className="h-6 w-6" />
             <span className="text-sm font-medium">dpistone10@yahoo.com</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="flex min-h-[50vh] w-full  items-center justify-between gap-3 bg-secondary px-4 py-10 lg:px-40">
