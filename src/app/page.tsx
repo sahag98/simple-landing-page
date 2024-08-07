@@ -50,7 +50,7 @@ export default function Home() {
         <section className="flex flex-col items-start gap-3">
           <h3 className="text-lg font-medium">About</h3>
           <h2 className="w-full text-2xl font-semibold lg:w-2/3 lg:text-5xl">
-            Welcome to Doug's Tractor Works
+            Welcome to Doug&apos;s Tractor Works
           </h2>
           <p className="text-lg font-medium lg:text-xl">
             Your Affordable Go-To for All Things Tractor.
