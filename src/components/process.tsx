@@ -18,7 +18,7 @@ const Process = () => {
               Our Process
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              At Greenscape Landscaping, we follow a structured, efficient
+              At Doug&apos;s Tractor Works, we follow a structured, efficient
               process to ensure your outdoor spaces are transformed with
               precision and care.
             </p>

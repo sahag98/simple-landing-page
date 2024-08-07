@@ -22,9 +22,9 @@ const AboutPage = () => {
             maintained to the highest standards.
           </p>
           <p className="text-lg">
-            Whether you're managing a small plot or a large estate, Doug&apos;s
-            Tractor Works is here to help you achieve your goals efficiently and
-            effectively.
+            Whether you&apos;re managing a small plot or a large estate,
+            Doug&apos;s Tractor Works is here to help you achieve your goals
+            efficiently and effectively.
           </p>
           <Button className="text-base">Call For More Information</Button>
         </section>

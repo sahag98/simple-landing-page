@@ -11,9 +11,9 @@ const Values = () => {
               Our Values
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              At Doug's Tractor Works, we are committed to providing exceptional
-              service, maintaining the highest standards of quality, and
-              fostering a sustainable, eco-friendly approach to lawn and
+              At Doug&apos;s Tractor Works, we are committed to providing
+              exceptional service, maintaining the highest standards of quality,
+              and fostering a sustainable, eco-friendly approach to lawn and
               landscape care.
             </p>
           </div>
