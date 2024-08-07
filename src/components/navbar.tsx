@@ -2,8 +2,8 @@
 
 import React, { useState } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -72,7 +72,14 @@ const Navbar = () => {
               About
             </Link>
             <Link href={"#services"}>Services</Link>
-            <Link href={"/gallery"}>Gallery</Link>
+            <Link
+              className={cn(
+                pathname === "/gallery" && " font-semibold text-primary"
+              )}
+              href={"/gallery"}
+            >
+              Gallery
+            </Link>
             <Link href={"#services"}>FAQ</Link>
           </ul>
         </div>

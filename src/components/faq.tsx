@@ -57,10 +57,10 @@ const FAQ = () => {
     },
   ]
   return (
-    <div className="z-20 flex w-full flex-col items-center gap-3 bg-primary px-4 py-5 md:px-10 lg:px-48">
+    <div className="flex w-full flex-col items-center gap-3 bg-primary/25 px-4 py-12 text-foreground  md:px-10 md:py-24 lg:px-48 lg:py-32">
       <SectionHeader title="FAQ" />
       <p className="text-lg">Here are some frequently asked questions.</p>
-      <div className="flex w-full items-center justify-between gap-8 pb-5">
+      <div className="flex w-full items-center justify-between gap-10">
         <Accordion className="flex-1" type="single" collapsible>
           {faqArray.map((faq) => (
             <AccordionItem key={faq.id} value={faq.question}>
@@ -73,13 +73,13 @@ const FAQ = () => {
             </AccordionItem>
           ))}
         </Accordion>
-        {/* <Image
+        <Image
           alt="faq image"
-          src={"/cleaning.webp"}
-          width={1080}
-          height={1080}
-          className="hidden rounded-lg border border-foreground lg:flex lg:w-1/3"
-        /> */}
+          src={"/tractorlog.jpg"}
+          width={1999}
+          height={1500}
+          className="hidden w-1/2 rounded-lg lg:flex"
+        />
       </div>
     </div>
   )

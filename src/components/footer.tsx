@@ -1,12 +1,8 @@
 // React and Next.js imports
 import Image from "next/image"
-import Link from "next/link"
-// Local component imports
-
-// Asset imports
-import Logo from "@/public/logo-nobg.png"
 // Icon imports
 import { Facebook, Github, Instagram, Twitter, Youtube } from "lucide-react"
+import { Link } from "next-view-transitions"
 // Third-party library imports
 import Balancer from "react-wrap-balancer"
 
@@ -17,7 +13,7 @@ import { Button } from "./ui/button"
 
 export default function Footer() {
   return (
-    <footer className="z-20 w-full bg-secondary px-4 py-5  md:px-16 lg:px-40">
+    <footer className="z-20 w-full border-t  px-4 pb-5 pt-10  md:px-16 lg:px-40">
       <div className="space-y-3">
         <div className="grid gap-12  md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-3">
@@ -37,7 +33,7 @@ export default function Footer() {
               <Balancer>{siteConfig.description}</Balancer>
             </p>
             <Link href={`tel:${siteConfig.links.tel}`} target="_blank">
-              <Button className="text-base">CALL FOR A FREE QUOTE</Button>
+              <Button className="text-base">Get A Quote</Button>
             </Link>
           </div>
           <div className="flex flex-col gap-2 text-foreground">
@@ -75,10 +71,10 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-2 text-foreground">
             <h5 className="mb-2">Business Hours</h5>
-            <span className="font-medium">T-TH-F : 9am - 6pm</span>
-            <span className="font-medium">W : 9am - 4pm</span>
-            <span className="font-medium">SAT : 9am - 3pm</span>
-            <span>$60 fee for booking on off days (Sun and Mon)</span>
+            <span className="font-medium">M-TH : 5:30am-10am & 5pm-8pm</span>
+            <span className="font-medium">F: 2pm - 8pm</span>
+            <span className="font-medium">SAT&SUN : 2pm - 8pm</span>
+            {/* <span>$60 fee for booking on off days (Sun and Mon)</span> */}
           </div>
           <div className="flex flex-col gap-2 text-foreground">
             <h5 className="font-bold">Service Areas</h5>

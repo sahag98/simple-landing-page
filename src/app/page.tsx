@@ -1,9 +1,10 @@
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "next-view-transitions"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import AboutImages from "@/components/about-images"
 import FAQ from "@/components/faq"
 import Footer from "@/components/footer"
 import { Icons } from "@/components/icons"
@@ -30,7 +31,7 @@ export default function Home() {
               "cursor-pointer text-base font-bold"
             )}
           >
-            CALL FOR QUOTE
+            Get A Quote
           </Link>
 
           <Link
@@ -43,42 +44,32 @@ export default function Home() {
           >
             View our Best Work
           </Link>
-          <Tractor />
-          {/* <Link
-            href={"mailto:dpistone10@yahoo.com"}
-            className="absolute bottom-4 right-4 flex items-center gap-2"
-          >
-            <Icons.email className="h-6 w-6" />
-            <span className="text-sm font-medium">dpistone10@yahoo.com</span>
-          </Link> */}
         </div>
       </div>
-      <div className="flex min-h-[50vh] w-full  items-center justify-between gap-3 bg-secondary px-4 py-10 lg:px-40">
-        <section className="flex flex-col items-start">
-          <h2 className="text-2xl font-semibold lg:text-5xl">
-            From Field to Finish!
+      <div className="flex w-full flex-col items-center justify-between gap-3 bg-primary/25 px-4 py-12 text-foreground md:py-24 lg:flex-row lg:px-40 lg:py-32">
+        <section className="flex flex-col items-start gap-3">
+          <h3 className="text-lg font-medium">About</h3>
+          <h2 className="w-full text-2xl font-semibold lg:w-2/3 lg:text-5xl">
+            Welcome to Doug's Tractor Works
           </h2>
-          <p className="lg:text-2xl">
-            Your Affordable Go-To for All Things Tractor
+          <p className="text-lg font-medium lg:text-xl">
+            Your Affordable Go-To for All Things Tractor.
+          </p>
+          <p className="w-full lg:w-2/3">
+            We specialize in providing comprehensive tractor services to meet
+            all your agricultural and land management needs
           </p>
           <Link
-            href={`tel:${siteConfig.links.tel}`}
-            target="_blank"
-            className={cn(buttonVariants({ variant: "link" }), "text-lg")}
+            href={"/about"}
+            className="mt-3 font-bold text-primary underline"
           >
             Learn More
           </Link>
         </section>
-        <Image
-          src={siteConfig.logo}
-          width={502}
-          height={497}
-          alt="about-image"
-        />
+        <AboutImages />
       </div>
       <Services />
       <FAQ />
-      <Footer />
     </main>
   )
 }

@@ -5,15 +5,19 @@ import SectionHeader from "./section-header"
 
 const Services = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-5 px-4 py-10 lg:px-40">
-      <SectionHeader title="Services" />
+    <div className="flex w-full flex-col items-center justify-center gap-5 px-4 pb-24 pt-20 lg:px-40">
+      <SectionHeader title="Our Services" />
+      <p>
+        Have a look at this list of services we offer and call us for more
+        information.
+      </p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {servicesData.map((service) => (
           <div
-            className="flex w-full flex-col justify-between gap-2 rounded-md border border-primary p-5 md:w-fit"
+            className="flex w-full flex-col justify-between gap-2 rounded-md border  p-5 md:w-fit"
             key={service.title}
           >
-            <h4 className="text-lg font-semibold">{service.title}</h4>
+            <h4 className="text-xl font-semibold">{service.title}</h4>
             <p>{service.description}</p>
           </div>
         ))}
