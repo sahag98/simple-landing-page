@@ -57,7 +57,10 @@ const FAQ = () => {
     },
   ]
   return (
-    <div className="flex w-full flex-col items-center gap-3 bg-primary/25 px-4 py-12 text-foreground  md:px-10 md:py-24 lg:px-48 lg:py-32">
+    <div
+      id="faq"
+      className="flex w-full flex-col items-center gap-3 bg-primary/25 px-4 py-12 text-foreground  md:px-10 md:py-24 lg:px-48 lg:py-32"
+    >
       <SectionHeader title="FAQ" />
       <p className="text-lg">Here are some frequently asked questions.</p>
       <div className="flex w-full items-center justify-between gap-10">

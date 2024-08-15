@@ -28,15 +28,14 @@ export default function Home() {
             target="_blank"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "cursor-pointer text-base font-bold"
+              "animate-buttonheartbeat cursor-pointer text-base font-bold"
             )}
           >
             Get A Quote
           </Link>
 
           <Link
-            href={`tel:${siteConfig.links.tel}`}
-            target="_blank"
+            href={"/gallery"}
             className={cn(
               buttonVariants({ size: "lg", variant: "secondary" }),
               "cursor-pointer text-sm  font-bold lg:text-lg"

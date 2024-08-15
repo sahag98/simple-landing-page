@@ -16,14 +16,16 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 z-10 w-full border-b bg-background">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-3">
-        <Image
-          src={siteConfig.logo}
-          width={1000}
-          className="w-16 lg:w-20"
-          height={1000}
-          priority
-          alt="dougs tractor works logo"
-        />
+        <Link href={"/"}>
+          <Image
+            src={siteConfig.logo}
+            width={1000}
+            className="w-16 lg:w-20"
+            height={1000}
+            priority
+            alt="dougs tractor works logo"
+          />
+        </Link>
         <button
           onClick={() => setNavOpen((prev) => !prev)}
           data-collapse-toggle="navbar-default"
@@ -80,7 +82,7 @@ const Navbar = () => {
             >
               Gallery
             </Link>
-            <Link href={"#services"}>FAQ</Link>
+            <Link href={"#faq"}>FAQ</Link>
           </ul>
         </div>
       </div>

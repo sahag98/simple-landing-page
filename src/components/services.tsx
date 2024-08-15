@@ -5,7 +5,10 @@ import SectionHeader from "./section-header"
 
 const Services = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-5 px-4 pb-24 pt-20 lg:px-40">
+    <div
+      id="services"
+      className="flex w-full flex-col items-center justify-center gap-5 px-4 pb-24 pt-20 lg:px-40"
+    >
       <SectionHeader title="Our Services" />
       <p>
         Have a look at this list of services we offer and call us for more
