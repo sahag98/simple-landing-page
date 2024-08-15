@@ -31,7 +31,7 @@ export default function Home() {
               "animate-buttonheartbeat cursor-pointer text-base font-bold"
             )}
           >
-            Get A Quote
+            Main Action
           </Link>
 
           <Link
@@ -41,22 +41,21 @@ export default function Home() {
               "cursor-pointer text-sm  font-bold lg:text-lg"
             )}
           >
-            View our Best Work
+            Secondary Action
           </Link>
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-between gap-3 bg-primary/25 px-4 py-12 text-foreground md:py-24 lg:flex-row lg:px-40 lg:py-32">
         <section className="flex flex-col items-start gap-3">
           <h3 className="text-lg font-medium">About</h3>
-          <h2 className="w-full text-2xl font-semibold lg:w-2/3 lg:text-5xl">
-            Welcome to Doug&apos;s Tractor Works
+          <h2 className="w-full text-2xl font-medium lg:w-2/3 lg:text-5xl">
+            Welcome to <span className="font-semibold">{siteConfig.name}</span>
           </h2>
           <p className="text-lg font-medium lg:text-xl">
-            Your Affordable Go-To for All Things Tractor.
+            Your business moto in 1 line
           </p>
           <p className="w-full lg:w-2/3">
-            We specialize in providing comprehensive tractor services to meet
-            all your agricultural and land management needs
+            Short about paragraph about who you are and what you do.
           </p>
           <Link
             href={"/about"}
@@ -65,7 +64,14 @@ export default function Home() {
             Learn More
           </Link>
         </section>
-        <AboutImages />
+        <Image
+          src={"/about-placeholder.png"}
+          width={1000}
+          height={1000}
+          alt="about placeholder"
+          className="rounded-lg object-cover lg:w-1/2"
+        />
+        {/* <AboutImages /> */}
       </div>
       <Services />
       <FAQ />

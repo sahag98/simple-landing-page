@@ -15,9 +15,4 @@ export const beforeAfterImages = [
     beforeImg: "/beforeAfter/fieldbefore.jpeg",
     afterImg: "/beforeAfter/fieldafter.jpeg",
   },
-  {
-    id: 4,
-    beforeImg: "/beforeAfter/pathbefore.jpeg",
-    afterImg: "/beforeAfter/pathafter.jpeg",
-  },
 ]

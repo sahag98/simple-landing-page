@@ -18,9 +18,7 @@ export default function Footer() {
         <div className="grid gap-12  md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-3">
             <Link href="/">
-              <h3 className="sr-only text-foreground">
-                Doug&apos;s Tractor Works
-              </h3>
+              <h3 className="sr-only text-foreground">{siteConfig.name}</h3>
               <Image
                 src={siteConfig.logo}
                 alt="Logo"
@@ -33,7 +31,7 @@ export default function Footer() {
               <Balancer>{siteConfig.description}</Balancer>
             </p>
             <Link href={`tel:${siteConfig.links.tel}`} target="_blank">
-              <Button className="text-base">Get A Quote</Button>
+              <Button className="text-base">Primary Action</Button>
             </Link>
           </div>
           <div className="flex flex-col gap-2 text-foreground">
@@ -77,38 +75,33 @@ export default function Footer() {
             {/* <span>$60 fee for booking on off days (Sun and Mon)</span> */}
           </div>
           <div className="flex flex-col gap-2 text-foreground">
-            <h5 className="font-bold">Service Areas</h5>
-            <p>
-              Anywhere within LA County (and surrounding borders) including:
-            </p>
+            <h5 className="font-bold">Service Areas (If applicable)</h5>
+            <p>Anywhere within "county" (and surrounding borders) including:</p>
             <ul className="space-y-2 ">
-              <li>- Antelope Valley (Lancaster, Palmdale, etc.)</li>
-              <li>- LA (Inglewood, Torrence, Longbeach)</li>
-              <li>- Hollywood (Santa Monica, UCLA, Beverly Hills)</li>
-              <li>- San Fernando Valley (Northridge, Burbank, Glendale)</li>
-              <li>- Santa Clarita (Valencia, New Hall, Saugus)</li>
+              <li>- City 1</li>
+              <li>- City 2</li>
+              <li>- City 3</li>
+              <li>- City 4</li>
+              <li>- City 5</li>
             </ul>
           </div>
         </div>
         <div className="not-prose flex flex-col justify-between gap-6 border-t border-t-foreground pt-5 md:flex-row md:items-center md:gap-2">
           <div className="flex gap-2">
-            <Link target="_blank" href={"https://www.instagram.com/mrofresh7/"}>
+            <Link target="_blank" href={""}>
               <Button size="icon">
                 <Instagram className="" />
               </Button>
             </Link>
 
-            <Link
-              target="_blank"
-              href={"https://www.facebook.com/profile.php?id=61559887131693"}
-            >
+            <Link target="_blank" href={""}>
               <Button size="icon">
                 <Facebook className="" />
               </Button>
             </Link>
           </div>
           <p className="text-foreground">
-            © dougstractorworks . All rights reserved. 2024-present.
+            © {siteConfig.name} . All rights reserved. 2024-present.
           </p>
         </div>
       </div>

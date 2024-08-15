@@ -63,15 +63,15 @@ module.exports = {
       keyframes: {
         buttonheartbeat: {
           "0%": {
-            "box-shadow": '0 0 0 0 theme("colors.green.500")',
+            "box-shadow": '0 0 0 0 theme("colors.stone.500")',
             transform: "scale(1)",
           },
           "50%": {
-            "box-shadow": '0 0 0 7px theme("colors.green.500/0")',
+            "box-shadow": '0 0 0 7px theme("colors.stone.500/0")',
             transform: "scale(1.05)",
           },
           "100%": {
-            "box-shadow": '0 0 0 0 theme("colors.green.500/0")',
+            "box-shadow": '0 0 0 0 theme("colors.stone.500/0")',
             transform: "scale(1)",
           },
         },

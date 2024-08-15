@@ -1,62 +1,34 @@
 export const servicesData = [
   {
-    title: "Mowing",
-    description:
-      "Precision mowing services to maintain the perfect length and health of your fields or lawns.",
+    title: "Service 1",
+    description: "Simple description of service 1 and its benefits.",
   },
   {
-    title: "Weed abatement",
-    description:
-      "Efficient and thorough removal of weeds to keep your land clear and manageable.",
+    title: "Service 2",
+    description: "Simple description of service 2 and its benefits.",
   },
   {
-    title: "Plowing",
-    description:
-      "Expert plowing to prepare your soil for planting or landscaping, ensuring optimal growth conditions.",
+    title: "Service 3",
+    description: "Simple description of service 3 and its benefits.",
   },
   {
-    title: "Grading",
-    description:
-      "Professional grading to level your land, improve drainage, and prepare for construction or planting.",
+    title: "Service 4",
+    description: "Simple description of service 4 and its benefits.",
   },
   {
-    title: "Digging",
-    description:
-      "Reliable digging services for various needs, including foundations, trenches, and landscaping features.",
+    title: "Service 5",
+    description: "Simple description of service 5 and its benefits.",
   },
   {
-    title: "Agricultural Tasks",
-    description:
-      "Comprehensive agricultural services tailored to meet your farming and gardening requirements.",
+    title: "Service 6",
+    description: "Simple description of service 6 and its benefits.",
   },
   {
-    title: "Junk Removal",
-    description:
-      "Fast and efficient removal of unwanted items to keep your property clean and clutter-free.",
+    title: "Service 7",
+    description: "Simple description of service 7 and its benefits.",
   },
   {
-    title: "Hauling Services",
-    description:
-      " Dependable hauling to transport materials, debris, and equipment safely and promptly.",
-  },
-  {
-    title: "Landscape Designs",
-    description:
-      "reative and functional landscape designs to transform your outdoor spaces.",
-  },
-  {
-    title: "Sod Installation",
-    description:
-      "Expert sod installation for a lush, green lawn that enhances the beauty of your property.",
-  },
-  {
-    title: "Irrigation Installations",
-    description:
-      "Customized irrigation systems to ensure your plants receive the right amount of water efficiently.",
-  },
-  {
-    title: "Sprinkler Water Lines",
-    description:
-      "Professional installation of sprinkler systems to keep your lawn and garden well-watered.",
+    title: "Service 8",
+    description: "Simple description of service 8 and its benefits.",
   },
 ]

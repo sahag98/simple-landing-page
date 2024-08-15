@@ -3,11 +3,11 @@ import { SiteConfig } from "@/types"
 import { env } from "@/env.mjs"
 
 export const siteConfig: SiteConfig = {
-  name: "Doug's Tractor Works",
+  name: "Business Name",
   author: "Doug's Tractor Works",
-  logo: "/website-logo.png",
+  logo: "/LOGO.png",
   description:
-    "We provide all kinds of tractor services such as: Weed abatement, loader work, mowing fields, plowing, and more.",
+    "Simple description about what you do and how that will help your clients.",
   keywords: ["Next.js", "React", "Tailwind CSS", "Radix UI", "shadcn/ui"],
   url: {
     base: env.NEXT_PUBLIC_APP_URL,

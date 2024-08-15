@@ -4,9 +4,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import { aboutImages } from "@/data/aboutImages"
 import Autoplay from "embla-carousel-autoplay"
-import { Circle } from "lucide-react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselApi,
